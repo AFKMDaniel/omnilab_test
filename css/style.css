@@ -12,7 +12,9 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    font-size: 1.6rem;
+    font-size: 2.5rem;
+    font-family: 'Fasthand', cursive;
+    color: rgb(255, 0, 149);
 }
 
 header {
@@ -26,12 +28,10 @@ header {
 
 #logo {
     font-size: 5rem;
-    color: rgb(255, 0, 149);
-    font-family: 'Fasthand', cursive;
 }
 
 main {
-    max-width: 1020px;
+    max-width: 1180px;
     width: 90%;
     margin: 0 auto;
 }
@@ -124,5 +124,69 @@ main {
 
 #right {
     right: 1rem;
+}
+
+#video {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, .5);
+    position: relative;
+    margin: 14rem 0;
+}
+
+#video img {
+    max-width: 100%;
+}
+
+#video button {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, .7);
+    border:1px solid rgb(255, 0, 149);
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    transition: all .3s ease-in-out;
+}
+
+#video button::after {
+    content: "";
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    width: 50%;
+    height: 50%;
+    background: linear-gradient(to right bottom, rgb(255, 0, 149) 50%, transparent 50%);
+    transform: rotateZ(135deg);
+}
+
+#video button:hover {
+    background-color: rgba(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.anim_element {
+    transform: translateY(30%);
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+.active {
+    transform: none;
+    opacity: 1;
 }
 
