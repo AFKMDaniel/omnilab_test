@@ -138,11 +138,18 @@ header {
     background-color: rgba(0, 0, 0, .5);
     position: relative;
     margin: 10rem auto;
-    max-width: 80rem;
+    max-width: 75%;
+}
+
+@media screen and (max-width:739px) {
+    #video {
+        max-width: none;
+    }
 }
 
 #video img {
     max-width: 100%;
+    max-height: 100%;
 }
 
 #video button {
