@@ -20,7 +20,7 @@ const moveSlider = (button,oppositeButton,edgeSlide,step) => {
 right.addEventListener('click',() => moveSlider(right, left, 4, 1))
 left.addEventListener('click', () => moveSlider(left, right, 0 ,-1))
 
-const animElements = document.querySelectorAll('.anim_element');
+const animElements = document.querySelectorAll('.anim-element');
 
 function isVisible(elem) {
     let coords = elem.getBoundingClientRect();
@@ -37,10 +37,21 @@ function isVisible(elem) {
 
 window.addEventListener('scroll', () => {
     animElements.forEach(animElement => {
-        if(isVisible(animElement)){
-            animElement.classList.add('active');
-        } else {
-            animElement.classList.remove('active');
-        }
+        if(isVisible(animElement)) animElement.classList.add('active');
     })
+})
+
+const showVideoButton = document.querySelector('#sh-video');
+const closeVideoButton = document.querySelector('#close-video');
+const modal = document.querySelector('.modal');
+
+showVideoButton.addEventListener('click', () => {
+    modal.classList.add('active');
+})
+
+closeVideoButton.addEventListener('click', () => {
+    modal.classList.remove('active');
+    const video = document.querySelector('video');
+    video.pause();
+    video.currentTime = 0;
 })
