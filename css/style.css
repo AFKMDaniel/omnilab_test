@@ -252,14 +252,6 @@ header {
     transform: rotateZ(90deg);
 }
 
-
-
-
-
-
-
-
-
 .anim-element {
     transform: translateY(30%);
     opacity: 0;
@@ -270,5 +262,16 @@ header {
     transform: none;
     opacity: 1;
     pointer-events: all;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2rem;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
