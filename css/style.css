@@ -276,7 +276,7 @@ footer {
     background-color: rgba(0, 0, 0, .5);
     color: #fff;
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     height: 100px;
     display: flex;
     align-items: center;
@@ -284,3 +284,64 @@ footer {
     padding:0 2rem;
 }
 
+/* Стили для секций */
+
+section {
+    background-color: rgba(0, 0, 0, .5);
+    padding:8rem 0;
+}
+
+section img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+section .wrapper {
+    display: flex;
+}
+
+section .wrapper div{
+    width: 50%;
+}
+
+section .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+section p {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 4rem;
+    color: rgb(255, 0, 149);
+}
+
+section:nth-of-type(even) .wrapper {
+    flex-direction: row-reverse;
+}
+
+section .img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:1200px) {
+    section .wrapper {
+        flex-direction: column;
+    }
+
+    section .wrapper div{
+        width: 100%;
+    }
+
+    section:nth-of-type(even) .wrapper {
+        flex-direction: column;
+    }
+
+    section p {
+        font-size: 7vw;
+    }
+}

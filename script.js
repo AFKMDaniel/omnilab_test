@@ -27,10 +27,10 @@ function isVisible(elem) {
     let windowHeight = document.documentElement.clientHeight;
   
     // верхний край элемента виден?
-    let topVisible = coords.top > 0 && coords.top < windowHeight / 1.5;
+    let topVisible = coords.top > 0 && coords.top < windowHeight;
   
     // нижний край элемента виден?
-    let bottomVisible = coords.bottom < windowHeight / 1.5 && coords.bottom > 0;
+    let bottomVisible = coords.bottom < windowHeight && coords.bottom > 0;
   
     return topVisible || bottomVisible;
   }
