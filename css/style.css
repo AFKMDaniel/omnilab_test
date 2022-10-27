@@ -78,7 +78,6 @@ header {
     border: none;
     font-size: 10rem;
     transform: translateY(-50%);
-    cursor: pointer;
 }
 
 #left,#right {
