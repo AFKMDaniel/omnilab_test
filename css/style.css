@@ -1,3 +1,5 @@
+/* Стили для корневых элементов */
+
 * {
     padding: 0;
     margin: 0;
@@ -23,6 +25,8 @@ body {
     margin: 0 auto;
 }
 
+/* Стили для хедера */
+
 header {
     height: 100px;
     background-color: rgba(0, 0, 0, .5);
@@ -35,6 +39,8 @@ header {
 #logo {
     font-size: 5rem;
 }
+
+/* Стили для слайдера */
 
 #slider {
     width: 100%;
@@ -127,6 +133,8 @@ header {
     right: 1rem;
 }
 
+/* Стили для обложки видео */
+
 #video {
     padding: 1rem;
     background-color: rgba(0, 0, 0, .5);
@@ -173,6 +181,8 @@ header {
 #video button:hover {
     background-color: rgba(0, 0, 0);
 }
+
+/* Стили для модального окна */
 
 .modal {
     position: fixed;
@@ -246,6 +256,8 @@ header {
     transform: rotateZ(90deg);
 }
 
+/* Стили для анимирования элементов */
+
 .anim-element {
     transform: translateY(30%);
     opacity: 0;
@@ -257,6 +269,8 @@ header {
     opacity: 1;
     pointer-events: all;
 }
+
+/* Стили для футера */
 
 footer {
     background-color: rgba(0, 0, 0, .5);
