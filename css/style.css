@@ -9,12 +9,19 @@
     font-size: 10px;
 }
 
-body {
-    background-image: url('../img/bg.jpg');
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bg.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-attachment: fixed;
+    background-position: center;
+    z-index: -1;
+}
+
+body {
     font-size: 2.5rem;
     font-family: 'Fasthand', cursive;
     color: rgb(255, 0, 149);
