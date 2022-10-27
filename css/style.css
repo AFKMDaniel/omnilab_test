@@ -13,7 +13,7 @@ body {
     background-image: url('../img/bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-attachment: fixed;
     font-size: 2.5rem;
     font-family: 'Fasthand', cursive;
