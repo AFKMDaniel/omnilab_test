@@ -12,6 +12,7 @@
 body {
     background-image: url('../img/bg.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     font-size: 2.5rem;
@@ -307,14 +308,15 @@ section .text {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 5rem;
+    font-size: 100%;
 }
 
 section p {
     text-align: center;
     font-family: 'Press Start 2P', cursive;
-    font-size: 4rem;
+    font-size: 3vh;
     color: rgb(255, 0, 149);
+    font-size: inherit;
 }
 
 section:nth-of-type(even) .wrapper {
@@ -327,7 +329,7 @@ section .img-wrapper {
     align-items: center;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:700px) {
     section .wrapper {
         flex-direction: column;
     }
@@ -340,7 +342,7 @@ section .img-wrapper {
         flex-direction: column;
     }
 
-    section p {
-        font-size: 7vw;
+    section .text {
+        margin-top: 4rem;
     }
 }
