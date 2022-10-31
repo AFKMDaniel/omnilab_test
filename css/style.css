@@ -63,7 +63,7 @@ header {
     display: flex;
     position: relative;
     left: -200%;
-    transition: all .9s ease-in-out;
+    transition-duration: .5s;
 }
 
 .slider-item{
